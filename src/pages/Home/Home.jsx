@@ -10,8 +10,8 @@ import Picture1 from "../../assets/Picture1.jpg"
 import Picture2 from "../../assets/Picture2.jpg"
 import Picture4 from "../../assets/Picture4.jpg"
 import Picture5 from "../../assets/Picture5.jpg"
-import Picture6 from "../../assets/farm-16.png"
-import Picture7 from "../../assets/farm-17.png"
+import Picture6 from "../../assets/Picture8.jpg"
+import Picture7 from "../../assets/Picture9.jpg"
 import { Button } from "../../components/ui/button";
 
 
@@ -118,16 +118,16 @@ const Home = () => {
             {/* Description icons */}
             <div className="flex flex-col md:flex-row items-center gap-2 space-y-4 mt-8">
 
-                <div className="flex flex-row gap-2 w-80">
-                    <img src={Picture6} alt="" className="h-16"/>
+                <div className="flex flex-row gap-2 w-96">
+                    <img src={Picture6} alt="" className="h-16 rounded-full"/>
                     <div className="flex flex-col space-y-2">
                         <span className="text-2xl font-bold text-black/70">100% Vida Sustentável</span>
                         <span>Somos a melhor agricultura biológica</span>
                     </div>
                 </div>
 
-                <div className="flex flex-row gap-2 w-80">
-                    <img src={Picture7} alt="" className="h-16"/>
+                <div className="flex flex-row gap-2 w-96">
+                    <img src={Picture7} alt="" className="h-16 rounded-full"/>
                     <div className="flex flex-col space-y-2">
                         <span className="text-2xl font-bold text-black/70">Transformando Vidas</span>
                         <span>Perfeito para vegetais, frutas, flores e agricultura orgânica.</span>
@@ -137,7 +137,7 @@ const Home = () => {
             </div>
              {/* Latest text description */}
              <div className="md:border-l-2 border-primary">
-                <p className="ml-5">“A WutomiDC é uma iniciativa que une agricultura, nutrição, tecnologia e fé para promover uma vida saudável, sustentável e com propósito. Inspiramos e capacitamos pessoas a viverem com saúde, conexão com a natureza e valores sólidos.”</p>
+                <p className="ml-5">A WutomiDC promove vida, saúde e sustentabilidade, unindo agricultura, nutrição e tecnologia para transformar comunidades e inspirar pessoas a viverem com propósito.</p>
              </div>
           </div>
           <div className="md:ml-8">

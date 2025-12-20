@@ -89,11 +89,11 @@ const Home = () => {
 
           {/*Second Column*/}
           <div className="w-full md:w-1/3">
-            <img src={Picture1} alt="" />
+            <img src={Picture2} alt="" />
           </div>
           {/*Third Column*/}
           <div className="w-full md:w-1/3">
-            <img src={Picture2} alt="" />
+            <img src={Picture1} alt="" />
           </div>
         </div>
       </section>

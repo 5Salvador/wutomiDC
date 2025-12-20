@@ -107,21 +107,21 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row">
          {/* First Side Content */}
          <div className="md:w-1/2">
-           <img src={Picture4} alt="" className="rounded-l-[100px] rounded-br-[350px] rounded-tr-[90px]"/>
+           <img src={Picture4} alt="" className="rounded-l-[100px] rounded-br-[350px] rounded-tr-[90px] md:h-[600px]"/>
          </div>
          {/* Second Side Content */}
          <div className="md:w-1/2">
           <div className="flex flex-col space-y-3 p-8">
             <h2 className="text-3xl md:text-3xl font-bold text-primary">Quem Somos?</h2>
-            <span className="text-4xl md:text-5xl font-bold text-secondary/70">Somos a melhor agricultura biológica</span>
-            <span className="text-gray-600">Wutomi é uma organização sem fins lucrativos que visa promover a sustentabilidade, a educação agroalimentar e o desenvolvimento comunitário, inspirando vidas e fortalecendo a conexão com a natureza.</span>
+            <span className="text-4xl md:text-5xl font-bold text-secondary/70">Nós somos a <span className="text-primary">Wutomi</span><spn>DC</spn></span>
+            <span className="text-gray-600">“A WutomiDC é uma iniciativa que une agricultura, nutrição, tecnologia e fé para promover uma vida saudável, sustentável e com propósito. Inspiramos e capacitamos pessoas a viverem com saúde, conexão com a natureza e valores sólidos.”</span>
             {/* Description icons */}
             <div className="flex flex-col md:flex-row items-center gap-2 space-y-4 mt-8">
 
                 <div className="flex flex-row gap-2 w-80">
                     <img src={Picture6} alt="" className="h-16"/>
                     <div className="flex flex-col space-y-2">
-                        <span className="text-2xl font-bold text-black/70">100% Organico</span>
+                        <span className="text-2xl font-bold text-black/70">100% Vida Sustentável</span>
                         <span>Somos a melhor agricultura biológica</span>
                     </div>
                 </div>
@@ -129,7 +129,7 @@ const Home = () => {
                 <div className="flex flex-row gap-2 w-80">
                     <img src={Picture7} alt="" className="h-16"/>
                     <div className="flex flex-col space-y-2">
-                        <span className="text-2xl font-bold text-black/70">Versátil Uso</span>
+                        <span className="text-2xl font-bold text-black/70">Transformando Vidas</span>
                         <span>Perfeito para vegetais, frutas, flores e agricultura orgânica.</span>
                     </div>
                 </div>
@@ -137,7 +137,7 @@ const Home = () => {
             </div>
              {/* Latest text description */}
              <div className="md:border-l-2 border-primary">
-                <p className="ml-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam pariatur temporibus rerum nemo harum, asperiores, maxime esse modi sit aliquid aperiam ea! Harum, delectus. Similique voluptatum itaque perspici.</p>
+                <p className="ml-5">“A WutomiDC é uma iniciativa que une agricultura, nutrição, tecnologia e fé para promover uma vida saudável, sustentável e com propósito. Inspiramos e capacitamos pessoas a viverem com saúde, conexão com a natureza e valores sólidos.”</p>
              </div>
           </div>
           <div className="md:ml-8">

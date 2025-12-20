@@ -6,7 +6,7 @@ import { FaXmark } from "react-icons/fa6";
 import { FaLinkedin, FaFacebook, FaTiktok } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { RiArrowDropRightLine, RiArrowDropDownLine } from "react-icons/ri";
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -93,7 +93,7 @@ const Navbar = () => {
       </section>
 
       {/* --- Main Navigation Bar --- */}
-      <nav className="top-0 left-0 w-full bg-white shadow-md font-montserrat">
+      <nav className="relative z-50 w-full bg-white shadow-md font-montserrat">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
           {/* Logo */}
           <div className="flex items-center gap-2">
@@ -160,73 +160,99 @@ const Navbar = () => {
             )}
           </div>
 
-          {/* Mobile Menu */}
+          {/* --- Overlay for mobile --- */}
           <AnimatePresence>
             {isVisible && (
-              <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -100 }}
-                transition={{ duration: 0.5 }}
-                className="md:hidden absolute top-20 left-0 w-2xs p-2 py-6 bg-primary shadow-md flex flex-col items-start gap-4"
-              >
-            {navLinks.map((link, index) =>
-              link.dropdown ? (
-                <div
-                  key={index}
-                  className="flex flex-col border-b border-gray-400 w-full px-4"
+              <>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 0.4 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="fixed inset-0 bg-black md:hidden z-40"
+                  onClick={handleClick}
+                ></motion.div>
+
+                {/* --- Mobile Menu --- */}
+                <motion.div
+                  initial={{ opacity: 0, x: -100 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -100 }}
+                  transition={{ duration: 0.4 }}
+                  className="fixed top-0 left-0 w-64 h-screen bg-primary z-50 flex flex-col items-start gap-4 p-4 shadow-lg"
                 >
-                  {/* Dropdown trigger for mobile */}
+                  {/* Close button at top */}
                   <button
-                    onClick={() =>
-                      setOpenDropdown(
-                        openDropdown === link.name ? null : link.name
-                      )
-                    }
-                    className="text-white font-medium hover:text-secondary flex items-center justify-between w-full py-2"
+                    onClick={handleClick}
+                    className="self-end mb-2 text-white hover:text-secondary"
                   >
-                    <span>{link.name}</span>
-                    {openDropdown === link.name ? (
-                      <RiArrowDropDownLine size={28} className="text-white" />
-                    ) : (
-                      <RiArrowDropRightLine size={28} className="text-white" />
-                    )}
+                    <FaXmark size={24} />
                   </button>
 
-                  {/* Mobile dropdown content */}
-                  <AnimatePresence>
-                    {openDropdown === link.name && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="flex flex-col mt-1 space-y-1 ml-3 w-full overflow-hidden"
+                  {navLinks.map((link, index) =>
+                    link.dropdown ? (
+                      <div
+                        key={index}
+                        className="flex flex-col border-b border-gray-400 w-full"
                       >
-                        {link.dropdown.map((subLink, i) => (
-                          <Link
-                            key={i}
-                            to={subLink.path}
-                            className="text-white/90 hover:text-secondary text-sm border-t border-gray-500 py-2 pl-2"
-                          >
-                            {subLink.name}
-                          </Link>
-                        ))}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              ) : (
-                <Link
-                  key={index}
-                  to={link.path}
-                  className="text-white hover:text-gift font-medium px-4 py-2 border-b border-gray-400 w-full"
-                >
-                  {link.name}
-                </Link>
-              )
-            )}
-              </motion.div>
+                        {/* Dropdown trigger for mobile */}
+                        <button
+                          onClick={() =>
+                            setOpenDropdown(
+                              openDropdown === link.name ? null : link.name
+                            )
+                          }
+                          className="text-white font-medium hover:text-secondary flex items-center justify-between w-full py-2"
+                        >
+                          <span>{link.name}</span>
+                          {openDropdown === link.name ? (
+                            <RiArrowDropDownLine
+                              size={28}
+                              className="text-white"
+                            />
+                          ) : (
+                            <RiArrowDropRightLine
+                              size={28}
+                              className="text-white"
+                            />
+                          )}
+                        </button>
+
+                        {/* Mobile dropdown content */}
+                        <AnimatePresence>
+                          {openDropdown === link.name && (
+                            <motion.div
+                              initial={{ opacity: 0, height: 0 }}
+                              animate={{ opacity: 1, height: "auto" }}
+                              exit={{ opacity: 0, height: 0 }}
+                              transition={{ duration: 0.3 }}
+                              className="flex flex-col mt-1 space-y-1 ml-3 w-full z-50"
+                            >
+                              {link.dropdown.map((subLink, i) => (
+                                <Link
+                                  key={i}
+                                  to={subLink.path}
+                                  className="text-white/90 hover:text-secondary text-sm border-t border-gray-500 py-2 pl-2"
+                                >
+                                  {subLink.name}
+                                </Link>
+                              ))}
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </div>
+                    ) : (
+                      <Link
+                        key={index}
+                        to={link.path}
+                        className="text-white hover:text-gift font-medium py-2 border-b border-gray-400 w-full"
+                      >
+                        {link.name}
+                      </Link>
+                    )
+                  )}
+                </motion.div>
+              </>
             )}
           </AnimatePresence>
         </div>

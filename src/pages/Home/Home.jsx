@@ -147,6 +147,51 @@ const Home = () => {
         </div>
 
       </section>
+
+      {/* Nossos Processos */}
+      <section className="w-full min-h-[70vh] mt-10 bg-gray-400/10 py-16">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+
+            {/*Texto Desc */}
+            <div className="md:w-1/2 space-y-4">
+                <h2 className="text-2xl font-semibold text-primary">Nossos Processos- <span>Wutomi</span><span className="text-secondary">DC</span></h2>
+                <span className="text-3xl font-bold text-secondary/70 md:text-5xl mt-6">How We Work</span>
+                <p className="mt-8 md:w-80 mb-8">Na WutomiDC seguimos práticas sustentáveis e inovadoras para cultivar produtos de qualidade, capacitar comunidades e gerar impacto positivo.</p>
+
+                <Button variant="default" size="lg">Saber mais</Button>
+            </div>
+
+            {/*Description de processos*/}
+            <div className="md:w-full flex flex-col md:flex-row gap-3">
+                <div className="md:w-64 bg-secondary/70 flex flex-col rounded-4xl  p-4 h-96">
+                <span className="text-5xl">01</span>
+                <div className="flex flex-col gap-2 mt-36 md:mt-16">
+                 <span className="text-2xl font-semibold">Preparação da Terra</span>
+                 <p className="italic text-gray-600">Realizamos a preparação das machambas e áreas de cultivo utilizando técnicas sustentáveis, garantindo solo fértil e saudável para cada plantio.</p>
+                </div>
+                </div>
+
+                <div className="md:w-64 bg-primary/15 flex flex-col rounded-4xl  p-4 h-96">
+                <span className="text-5xl">02</span>
+                <div className="flex flex-col gap-2 mt-28 md:mt-16">
+                 <span className="text-2xl font-semibold">Plantio e Cultivo de Sementes</span>
+                 <p className="italic text-gray-600">Selecionamos sementes de qualidade e realizamos o plantio de forma estratégica, monitorando o crescimento e aplicando boas práticas agrícolas</p>
+                </div>
+                </div>
+
+                <div className="md:w-64 bg-primary/90 flex flex-col rounded-4xl p-4 h-96">
+                <span className="text-5xl text-white">03</span>
+                <div className="flex flex-col gap-2 mt-32 md:mt-16">
+                 <span className="text-2xl text-white font-semibold">Colheita e Processamento</span>
+                 <p className="italic text-white">Após a colheita, os produtos são cuidadosamente processados, transformados e preparados para consumo ou comercialização, garantindo qualidade e segurança alimentar.</p>
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+
+      </section>
     </>
   );
 };

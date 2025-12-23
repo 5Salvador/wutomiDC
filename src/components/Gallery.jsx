@@ -11,8 +11,10 @@ const Gallery = () => {
         {/* Images gallery */}
         <div className='max-w-7xl mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-20'>
           {/*Texto */}
-          <div className='md:w-1/2 flex flex-col space-y-2'>
-          <span>Our Gallery</span>
+          <div className='md:w-80 md:h-80 flex flex-col space-y-2'>
+          <span className='text-primary text-xl font-semibold'>Our Gallery</span>
+          <h2 className='text-2xl md:text-5xl font-bold'>Com cuidado e amor tudo cresce</h2>
+          <p className='text-primary font-semibold text-xl'>Wutomi<span className='text-secondary'>DC</span></p>
           </div>
 
           {/* Imágenes */}

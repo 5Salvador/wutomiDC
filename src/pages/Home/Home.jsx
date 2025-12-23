@@ -14,6 +14,7 @@ import Picture6 from "../../assets/Picture8.jpg"
 import Picture7 from "../../assets/Picture9.jpg"
 import { Button } from "../../components/ui/button";
 import Gallery from "../../components/Gallery";
+import Services from "../../components/Services";
 
 
 const Home = () => {
@@ -148,6 +149,8 @@ const Home = () => {
         </div>
 
       </section>
+      {/* Nossos Servicos */}
+      <Services />
 
       {/* Nossos Processos */}
       <section className="w-full min-h-[70vh] mt-10 bg-gray-400/10 py-16">
@@ -156,7 +159,7 @@ const Home = () => {
           {/*Texto Desc */}
           <div className="md:w-1/2 space-y-4">
             <h2 className="text-2xl font-semibold text-primary">Nossos Processos- <span>Wutomi</span><span className="text-secondary">DC</span></h2>
-            <span className="text-3xl font-bold text-secondary/70 md:text-5xl mt-6">How We Work</span>
+            <span className="text-3xl font-bold text-secondary/70 md:text-5xl mt-6">Como trabalhamos</span>
             <p className="mt-8 md:w-80 mb-8">Na WutomiDC seguimos práticas sustentáveis e inovadoras para cultivar produtos de qualidade, capacitar comunidades e gerar impacto positivo.</p>
 
             <Button variant="default" size="lg">Saber mais</Button>
@@ -193,7 +196,7 @@ const Home = () => {
         </div>
 
       </section>
-
+      
       {/* Galleria */}
       <Gallery />
     </>

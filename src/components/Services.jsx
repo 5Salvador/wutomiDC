@@ -3,7 +3,7 @@ import Picture11 from "../assets/Picture11.jpg";
 import Picture14 from "../assets/Picture14.jpg";
 import Nutritiion from "../assets/nutrition.jpg"
 import Apples from "../assets/Apples.jpg";
-import Cosmetics from "../assets/cosmeticos.jpg";
+import Picture16 from "../assets/cosmeticos.jpg"
 
 const Services = () => {
   return (
@@ -101,7 +101,7 @@ const Services = () => {
               <div className="w-full md:w-2/5 h-52 md:h-auto overflow-hidden relative">
                 <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300 z-10"></div>
                 <img
-                  src={Cosmetics}
+                  src={Picture16}
                   alt="Cosmeticos"
                   className="w-full h-full rounded-2xl object-cover transition-transform duration-700 group-hover:scale-110"
                 />

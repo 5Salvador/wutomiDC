@@ -3,7 +3,7 @@ import Picture11 from "../assets/Picture11.jpg";
 import Picture14 from "../assets/Picture14.jpg";
 import Nutritiion from "../assets/nutrition.jpg"
 import Apples from "../assets/Apples.jpg";
-import Cosmetics from "../assets/Cosmeticos.jpg";
+import Cosmetics from "../assets/cosmeticos.jpg";
 
 const Services = () => {
   return (

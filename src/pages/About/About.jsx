@@ -13,6 +13,8 @@ import Logo from "/wDC.png";
 import Picture1 from "../../assets/Picture1.jpg";
 import Picture2 from "../../assets/Picture2.jpg";
 import Picture15 from "../../assets/Picture15.jpg";
+import Farm1 from "../../assets/farm-16.png";
+import Farm2 from "../../assets/farm-17.png";
 
 const About = () => {
   const fadeInUp = {
@@ -76,7 +78,7 @@ const About = () => {
               Wutomi<span className="text-secondary">DC</span>
             </span>
           </p>
-          <h2 className="text-2xl md:text-5xl font-semibold">
+          <h2 className="text-2xl md:text-5xl font-medium font-sans">
             Cultivamos mais do que a terra - cultivamos princípios
           </h2>
         </div>
@@ -106,7 +108,7 @@ const About = () => {
       </section>
 
       {/*Second Section */}
-      <section className="w-full min-h-screen bg-primary/5">
+      <section className="w-full min-h-[600px] bg-primary/5 py-4">
         <div className="max-w-7xl mx-auto py-4 flex flex-col md:flex-row gap-4 my-8 px-4">
           {/*First Column */}
           <div className="md:w-1/2 flex flex-col">
@@ -129,21 +131,73 @@ const About = () => {
               produção local e no fornecimento de produtos e soluções que geram
               impacto positivo nas comunidades.
             </p>
-            <div className="flex flex-row gap-2 mt-4">
+            <div className="my-4">
+              <p className="font-bold">Comercializamos Produtos:</p>
+            </div>
+            <div className="flex flex-col md:flex-row gap-2 mt-4">
               {/*First Row */}
               <div>
-                <div></div>
                 <div>
-                  <p>Comercializamos Produtos</p>
+                  <img
+                    src={Farm1}
+                    alt=""
+                    className="w-16 h-16 object-contain"
+                  />
+                </div>
+                <div>
+                  <p className="font-bold">De Qualidade</p>
+
+                  <p>
+                    Promovemos uma agricultura que valoriza a natureza, a
+                    comunidade e o desenvolvimento sustentável.
+                  </p>
                 </div>
               </div>
               {/*Second Row */}
-              <div></div>
+              <div>
+                <div>
+                  <img
+                    src={Farm2}
+                    alt=""
+                    className="w-16 h-16 object-contain"
+                  />
+                </div>
+                <div>
+                  <p className="font-bold">Naturais </p>
+                  <p>
+                    Cultivamos e selecionamos produtos naturais com cuidado,
+                    respeitando a terra e promovendo uma vida saudável.
+                  </p>
+                </div>
+              </div>
+              {/*Third Row */}
+              <div>
+                <div>
+                  <img
+                    src={Farm2}
+                    alt=""
+                    className="w-16 h-16 object-contain"
+                  />
+                </div>
+                <div>
+                  <p className="font-bold">Saudáveis </p>
+
+                  <p className="">
+                    Apoiamos uma alimentação nutritiva, segura e produzida de
+                    forma responsável para o bem-estar das pessoas e das
+                    comunidades.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           {/*Second Column */}
           <div className="md:w-1/2">
-            <img src={Picture15} alt="" />
+            <img
+              src={Picture15}
+              alt=""
+              className="w-full md:h-[450px] object-cover"
+            />
           </div>
         </div>
       </section>
@@ -248,14 +302,47 @@ const About = () => {
       {/*Fourth Section O que fazemos...*/}
       <section className="w-full min-h-[50vh] my-8 md:my-16 bg-secondary py-8">
         <div className="max-w-7xl mx-auto py-4 flex flex-col  my-8 px-4 space-y-6">
-            <div className="text-center">
-                <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">O Que Fazemos & Atuação </p>
-                <h2 className="text-2xl md:text-5xl font-semibold">Agricultura, pecuária, processamento</h2>
-            </div>
-            <div className="text-center text-lg">
-               <p>Na WutomiDC, cada ação é uma semente plantada para gerar vida. Atuamos com compromisso, sustentabilidade e propósito, promovendo bem-estar para pessoas, comunidades e o meio ambiente.</p> 
-            </div>
+          <div className="text-center">
+            <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">
+              O Que Fazemos & Atuação{" "}
+            </p>
+            <h2 className="text-2xl md:text-5xl font-semibold">
+              Agricultura, pecuária, processamento
+            </h2>
+          </div>
+          <div className="text-center text-lg">
+            <p>
+              Na WutomiDC, cada ação é uma semente plantada para gerar vida.
+              Atuamos com compromisso, sustentabilidade e propósito, promovendo
+              bem-estar para pessoas, comunidades e o meio ambiente.
+            </p>
+          </div>
+        </div>
+      </section>
+      {/*Fifth Section*/}
+      <section className="relative w-full h-[70vh] my-8 md:my-16 overflow-hidden">
+        {/* Video Background */}
+        <iframe
+          className="absolute top-1/2 left-1/2 w-[300%] h-[300%] -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0"
+          src="https://www.youtube.com/embed/TPMW5SGe2JE?autoplay=1&mute=1&loop=1&playlist=TPMW5SGe2JE&controls=0&showinfo=0&rel=0&disablekb=1&modestbranding=1&iv_load_policy=3" 
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+        {/* Overlay to darken video for text readability */}
+        <div className="absolute inset-0 bg-black/50 z-10" />
 
+        {/* Text Content */}
+        <div className="relative z-20 h-full flex flex-col items-center justify-center text-center px-4 max-w-5xl mx-auto space-y-6">
+          <h2 className="text-3xl md:text-6xl font-bold text-secondary leading-tight">
+            Cultivando um futuro mais verde e sustentável
+          </h2>
+          <p className="text-white/90 text-lg md:text-2xl max-w-3xl">
+            Através da inovação e do respeito pela terra, trabalhamos dia após dia para garantir alimentos saudáveis e acessíveis para todos.
+          </p>
+          <Button variant="default" size="lg" className="mt-8  text-white border-white hover:bg-white hover:text-primary transition-colors duration-300">
+            Junte-se a Nós
+          </Button>
         </div>
       </section>
     </>

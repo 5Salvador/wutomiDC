@@ -20,7 +20,6 @@ const Navbar = () => {
       name: "Sobre Nós",
       dropdown: [
         { name: "Quem Somos", path: "/about" },
-        { name: "O Que Fazemos", path: "/oque-fazemos" },
         { name: "Projectos & Impacto", path: "/projectos-impacto" },
         { name: "Agricultores & Parceiros", path: "/agricultores-parceiros" },
         { name: "Testemunhos", path: "/testemunhos" },

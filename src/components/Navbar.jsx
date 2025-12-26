@@ -50,13 +50,13 @@ const Navbar = () => {
       ],
     },
     { name: "Loja", path: "/shop" },
-    {
-      name: "Login",
-      dropdown: [
-        { name: "Entrar", path: "/login" },
-        { name: "Criar Conta", path: "/register" },
-      ],
-    },
+    // {
+    //   name: "Login",
+    //   dropdown: [
+    //     { name: "Entrar", path: "/login" },
+    //     { name: "Criar Conta", path: "/register" },
+    //   ],
+    // },
   ];
 
   return (
@@ -158,6 +158,11 @@ const Navbar = () => {
                 </Link>
               )
             )}
+          </div>
+          <div>
+            <Link to="/login" className="bg-primary text-secondary px-4 py-2 rounded-md hover:text-white hover:bg-secondary duration-300">
+              Login
+            </Link>           
           </div>
 
           {/* --- Overlay for mobile --- */}

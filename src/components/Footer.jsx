@@ -77,13 +77,13 @@ const Footer = () => {
                    <span className="text-white text-lg" >geral@wutomidc.com</span>
                 </div>
                 <div className="flex flex-row gap-3">
-                  <Link to="/" className="group bg-secondary/40 p-4 hover:bg-secondary/60 duration-300 rounded-full">
+                  <Link to="https://www.linkedin.com/company/wutomi-dc/about/?viewAsMember=true" target="_blank" className="group bg-secondary/40 p-4 hover:bg-secondary/60 duration-300 rounded-full">
                      <FaLinkedin size={18} className="group-hover:text-primary"/>
                   </Link>
-                  <Link to="/" className="group bg-secondary/40 p-4 hover:bg-secondary/60 duration-300 rounded-full">
+                  <Link to="https://www.facebook.com/profile.php?id=61583885933699&locale=pt_BR" target="_blank" className="group bg-secondary/40 p-4 hover:bg-secondary/60 duration-300 rounded-full">
                      <FaFacebook size={18} className="group-hover:text-primary"/>
                   </Link>
-                  <Link to="/" className="group bg-secondary/40 p-4 hover:bg-secondary/60 duration-300 rounded-full">
+                  <Link to="https://www.instagram.com/wutomi_dc_" target="_blank" className="group bg-secondary/40 p-4 hover:bg-secondary/60 duration-300 rounded-full">
                      <Instagram size={18} className="group-hover:text-primary"/>
                   </Link>
                   <Link to="/" className="group bg-secondary/40 p-4 hover:bg-secondary/60 duration-300 rounded-full">

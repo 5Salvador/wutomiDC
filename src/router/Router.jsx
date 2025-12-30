@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import App from "../App";
 import Layout from "../layout/Layout";
 import About from "../pages/About/About";
+import ProjectosImpact from "../pages/About/ProjectosImpact";
 
 const router = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
             {
                 path:"/about",
                 element: <About />
+            },
+            {
+                path:"/about/projectos-impacto",
+                element: <ProjectosImpact />
             }
         ]
     }

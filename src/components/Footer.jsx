@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="w-full py-8 p-8 mx-auto flex flex-col md:flex-row justify-between gap-2">
             {/* Logo */}
             <div className="flex flex-col items-center">
-                <img src="./WutomiDC.png" alt="WutomiDC Logo" />
+                <img src="/WutomiDC.png" alt="WutomiDC Logo" />
             </div>
 
             <div className="flex flex-col space-y-4">

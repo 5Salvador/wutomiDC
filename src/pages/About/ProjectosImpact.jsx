@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "../../components/ui/button";
-import { motion } from "framer-motion";
-import Banner from "../../assets/BannnerImpacto.jpeg";
+import HeroSection from "../../components/HeroSection";
 import Picture20 from "../../assets/Picture20.jpg";
 import Picture21 from "../../assets/Picture21.jpg";
 import Picture22 from "../../assets/Vigne-Riesling-86453-1.jpg";
@@ -17,57 +16,16 @@ import Picture31 from "../../assets/Digital.jpg";
 import Picture32 from "../../assets/Picture32.jpg";
 
 const ProjectosImpact = () => {
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  };
-
-  const staggerContainer = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
+ 
   return (
     <>
       {/*Hero Section */}
-      <section className="relative w-full h-[300px]">
-        <img
-          src={Banner}
-          alt="Hero"
-          className="w-full h-full object-cover opacity-80"
-        />
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          animate="visible"
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col shadow-lg text-center w-full px-4 space-y-4 items-center"
-        >
-          <motion.p
-            variants={fadeInUp}
-            className="text-2xl md:text-6xl font-bold text-center text-white"
-          >
-            Projetos & Impacto
-          </motion.p>
-
-          <motion.p
-            variants={fadeInUp}
-            className="text-lg font-bold text-center text-white"
-          >
-            Impacto e Projetos
-          </motion.p>
-          <motion.div variants={fadeInUp}>
-            <Button variant="outline" size="sm">
-              Home
-            </Button>
-          </motion.div>
-        </motion.div>
-      </section>
-
+       <HeroSection 
+     title="Projetos & Impacto"
+     subtitle="Impacto e Projetos"
+     buttonText="Início"
+     buttonLink="/"
+   />
       {/*First Section */}
       <section className="w-full min-h-screen -mt-8 bg-primary/5">
         <div className="max-w-7xl mx-auto md:py-18 py-4 flex flex-col md:flex-row gap-4 my-8 px-4">

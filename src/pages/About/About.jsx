@@ -10,6 +10,7 @@ import { IoFastFood } from "react-icons/io5";
 import { FaGraduationCap } from "react-icons/fa6";
 import { PiCowFill } from "react-icons/pi";
 import Logo from "/wDC.png";
+import HeroSection from "../../components/HeroSection";
 import Picture1 from "../../assets/Picture1.jpg";
 import Picture2 from "../../assets/Picture2.jpg";
 import Picture11 from "../../assets/Picture11.jpg";
@@ -25,58 +26,17 @@ import Farm2 from "../../assets/farm-17.png";
 import Digital from "../../assets/Digital.jpg";
 
 const About = () => {
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  };
-
-  const staggerContainer = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
+ 
   return (
     <>
-      <section className="relative w-full h-[300px]">
-        <img
-          src={AboutImage}
-          alt="Hero"
-          className="w-full h-full object-cover opacity-80"
-        />
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          animate="visible"
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col shadow-lg text-center w-full px-4 space-y-4 items-center"
-        >
-          <motion.p
-            variants={fadeInUp}
-            className="text-2xl md:text-6xl font-bold text-center text-white"
-          >
-            Sobre a{" "}
-            <span className="text-primary">
-              Wutomi<span className="text-secondary">DC</span>
-            </span>
-          </motion.p>
-
-          <motion.p
-            variants={fadeInUp}
-            className="text-lg font-bold text-center text-white"
-          >
-            Onde a natureza gera Vida
-          </motion.p>
-          <motion.div variants={fadeInUp}>
-            <Button variant="outline" size="sm">
-              Home
-            </Button>
-          </motion.div>
-        </motion.div>
-      </section>
+    <HeroSection 
+     title="Sobre a WutomiDC"
+     subtitle="Onde a natureza gera Vida"
+     buttonText="Início"
+     buttonLink="/"
+     imageSrc={AboutImage}
+     height="h-[300px]"
+   />
       {/*First Section */}
       <section className="max-w-7xl mx-auto py-4 flex flex-col md:flex-row gap-4 my-8 px-4">
         <div className="md:w-1/2 flex flex-col space-y-5">

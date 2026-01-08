@@ -5,4 +5,17 @@
   --color-secondary: #e9b522;
   --color-tertiary: #972626;
   --color-fourth: #ffffff;
+  --font-quincy: 'Quincy', sans-serif;
+}
+
+
+@font-face {
+  font-family: 'Quincy';
+  src: url("./assets/fonts/Fontspring-DEMO-quincycf-regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: var(--font-quincy);
 }

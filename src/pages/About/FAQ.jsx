@@ -134,9 +134,7 @@ const FAQ = () => {
               Ainda tem mais perguntas?
             </h1>
             <span className="text-gray-200">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit.
+             Estamos disponíveis para esclarecer qualquer questão sobre os nossos serviços, produtos, projetos e formas de parceria. Entre em contacto connosco e teremos todo o gosto em ajudar.
             </span>
           </div>
 

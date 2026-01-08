@@ -21,8 +21,8 @@ const Navbar = () => {
       dropdown: [
         { name: "Quem Somos", path: "/about" },
         { name: "Projectos & Impacto", path: "/about/projectos-impacto" },
-        { name: "Agricultores & Parceiros", path: "/agricultores-parceiros" },
-        { name: "Testemunhos", path: "/testemunhos" },
+        // { name: "Agricultores & Parceiros", path: "/agricultores-parceiros" },
+        // { name: "Testemunhos", path: "/testemunhos" },
         { name: "FAQ", path: "/faq" },
       ],
     },

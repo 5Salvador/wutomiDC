@@ -6,16 +6,27 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import './styles.css';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
+
 
 
 const Slider = () => {
   return (
+
    <section className='w-full min-h-[50vh] flex items-center bg-gray-50 py-8'>
     <div className='max-w-7xl mx-auto px-4 flex flex-col md:flex-row w-full gap-8'>
         {/*First Column*/}
         <div className="w-full md:max-w-4xl">
-            <Swiper pagination={true} modules={[Pagination]} className="mySwiper w-full h-78 rounded-2xl bg-white shadow-lg border border-gray-100">
+            <Swiper 
+              pagination={true} 
+              modules={[Pagination, Autoplay]} 
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true
+              }}
+              loop={true}
+              className="mySwiper w-full h-78 rounded-2xl bg-white shadow-lg border border-gray-100">
               <SwiperSlide className='flex items-center justify-center'>
                 <div className="flex flex-col space-y-4 md:space-y-6 p-6 md:p-10 items-center justify-center text-center">
                   <p className="text-xl md:text-3xl italic text-gray-600 leading-relaxed">“O sucesso não se mede pela aparência da sua vida para os outros. Ele se mede pela forma como você se sente.” </p>
@@ -58,6 +69,7 @@ const Slider = () => {
     </div>
 
    </section>
+  
   )
 }
 

@@ -23,6 +23,7 @@ import Apples from "../../assets/Apples.jpg";
 import Nutrition from "../../assets/nutrition.jpg";
 import Farm1 from "../../assets/farm-16.png";
 import Farm2 from "../../assets/farm-17.png";
+import Farm3 from "../../assets/natural.png"
 import Digital from "../../assets/Digital.jpg";
 
 const About = () => {
@@ -40,13 +41,13 @@ const About = () => {
       {/*First Section */}
       <section className="max-w-7xl mx-auto py-4 flex flex-col md:flex-row gap-4 my-8 px-4">
         <div className="md:w-1/2 flex flex-col space-y-5">
-          <p className="text-primary text-lg font-medium tracking-[0.2em] uppercase">
+          <p className="text-primary text-lg font-medium tracking-[0.2em] uppercase font-lora">
             Sobre a{" "}
             <span className="text-primary">
               Wutomi<span className="text-secondary">DC</span>
             </span>
           </p>
-          <h2 className="text-2xl md:text-5xl font-medium font-sans">
+          <h2 className="text-2xl md:text-5xl font-medium font-send-flowers">
             Cultivamos mais do que a terra - cultivamos princípios
           </h2>
         </div>
@@ -55,7 +56,7 @@ const About = () => {
             <div className="">
               <CircleCheckBig className="text-primary" size={16} />
             </div>
-            <p className="text-gray-600">
+            <p className="text-gray-600 font-medium font-pt-serif">
               Na WutomiDC, a agricultura é apenas o começo. Trabalhamos com
               valores que respeitam a natureza, promovem a vida e fortalecem
               comunidades e uma vida saudavel. Cada semente plantada carrega
@@ -67,7 +68,7 @@ const About = () => {
             <div className="">
               <CircleCheckBig className="text-primary" size={16} />
             </div>
-            <p className="text-gray-600">
+            <p className="text-gray-600 font-medium font-pt-serif">
               Acreditamos que, ao cultivar a terra com consciência, cultivamos
               também pessoas, esperança e um futuro sustentável.
             </p>
@@ -76,88 +77,30 @@ const About = () => {
       </section>
 
       {/*Second Section */}
-      <section className="w-full min-h-[600px] bg-primary/5 py-4">
+      <section className="w-full min-h-[600px] bg-primary/5 py-4 flex flex-col">
         <div className="max-w-7xl mx-auto py-4 flex flex-col md:flex-row gap-4 my-8 px-4">
           {/*First Column */}
           <div className="md:w-1/2 flex flex-col">
             <div>
               <img src={Logo} alt="" className="h-18 object-contain" />
             </div>
-            <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">
+            <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4 font-lora">
               Conheça-nos Melhor
             </p>
-            <h2 className="text-2xl md:text-5xl font-semibold">
+            <h2 className="text-2xl md:text-5xl font-semibold font-lora">
               Comercializamos Produtos de Alta Qualidade
             </h2>
 
-            <p className="text-xl text-primary my-10">
+            <p className="text-xl text-primary my-10 font-lora">
               Somos uma referência no setor agrícola
             </p>
 
-            <p>
+            <p className="font-pt-serif text-lg">
               Atuamos na promoção da agricultura sustentável, na valorização da
               produção local e no fornecimento de produtos e soluções que geram
               impacto positivo nas comunidades.
             </p>
-            <div className="my-4">
-              <p className="font-bold">Comercializamos Produtos:</p>
-            </div>
-            <div className="flex flex-col md:flex-row gap-2 mt-4">
-              {/*First Row */}
-              <div>
-                <div>
-                  <img
-                    src={Farm1}
-                    alt=""
-                    className="w-16 h-16 object-contain"
-                  />
-                </div>
-                <div>
-                  <p className="font-bold">De Qualidade</p>
-
-                  <p className="text-primary">
-                    Promovemos uma agricultura que valoriza a natureza, a
-                    comunidade e o desenvolvimento sustentável.
-                  </p>
-                </div>
-              </div>
-              {/*Second Row */}
-              <div>
-                <div>
-                  <img
-                    src={Farm2}
-                    alt=""
-                    className="w-16 h-16 object-contain"
-                  />
-                </div>
-                <div>
-                  <p className="font-bold">Naturais </p>
-                  <p>
-                    Cultivamos e selecionamos produtos naturais com cuidado,
-                    respeitando a terra e promovendo uma vida saudável.
-                  </p>
-                </div>
-              </div>
-              {/*Third Row */}
-              <div>
-                <div>
-                  <img
-                    src={Farm2}
-                    alt=""
-                    className="w-16 h-16 object-contain"
-                  />
-                </div>
-                <div>
-                  <p className="font-bold">Saudáveis </p>
-
-                  <p className="">
-                    Apoiamos uma alimentação nutritiva, segura e produzida de
-                    forma responsável para o bem-estar das pessoas e das
-                    comunidades.
-                  </p>
-                </div>
-              </div>
-            </div>
+            
           </div>
           {/*Second Column */}
           <div className="md:w-1/2">
@@ -168,23 +111,60 @@ const About = () => {
             />
           </div>
         </div>
+        <div className="max-w-7xl mx-auto py-10 px-6">
+  <div className="text-center mb-8">
+    <p className="font-medium font-pt-serif text-2xl text-gray-800">
+      Comercializamos Produtos:
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {/* Card 1 */}
+    <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+      <img src={Farm1} alt="Produto de qualidade" className="w-20 h-20 object-contain mb-4" />
+      <h3 className="font-bold font-lora text-xl mb-2 text-gray-900">De Qualidade</h3>
+      <p className="text-primary font-pt-serif text-justify text-gray-700 leading-relaxed">
+        Promovemos uma agricultura que valoriza a natureza, a comunidade e o desenvolvimento sustentável.
+      </p>
+    </div>
+
+    {/* Card 2 */}
+    <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+      <img src={Farm3} alt="Produtos naturais" className="w-20 h-20 object-contain mb-4" />
+      <h3 className="font-bold font-lora text-xl mb-2 text-gray-900">Naturais</h3>
+      <p className="text-primary font-pt-serif text-justify text-gray-700 leading-relaxed">
+        Cultivamos e selecionamos produtos naturais com cuidado, respeitando a terra e promovendo uma vida saudável.
+      </p>
+    </div>
+
+    {/* Card 3 */}
+    <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+      <img src={Farm2} alt="Produtos saudáveis" className="w-20 h-20 object-contain mb-4" />
+      <h3 className="font-bold font-lora text-xl mb-2 text-gray-900">Saudáveis</h3>
+      <p className="text-primary font-pt-serif text-justify text-gray-700 leading-relaxed">
+        Apoiamos uma alimentação nutritiva, segura e produzida de forma responsável para o bem-estar das pessoas e das comunidades.
+      </p>
+    </div>
+  </div>
+</div>
+
       </section>
       {/*Third Section   Mission, Values, Values */}
       <section className="w-ful min-h-screen my-8 md:my-16">
         <div className="my-10 text-center">
-          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">
+          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4 font-lora">
             Missão, Visão e Valores
           </p>
-          <h2 className="text-2xl md:text-5xl font-semibold">Nossos valores</h2>
+          <h2 className="text-2xl md:text-5xl font-semibold font-lora">Nossos valores</h2>
         </div>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row  justify-center gap-2 md:gap-0">
           {/*First Column*/}
           <div className="w-full md:w-1/3 flex flex-col">
             <div className="group flex flex-col justify-center bg-gray-300/40 p-4 px-8 py-4 hover:bg-primary/80 transition duration-300 hover:text-white">
-              <span className="text-start font-medium text-2xl text-primary group-hover:text-white">
+              <span className="text-start font-bold text-2xl text-primary group-hover:text-white font-lora ">
                 Missão
               </span>
-              <p>
+              <p className="font-pt-serif text-lg">
                 “Promover vida, bem-estar e desenvolvimento sustentável,
                 capacitando pessoas e comunidades através da agricultura,
                 educação, nutrição e fé.”
@@ -192,10 +172,10 @@ const About = () => {
             </div>
 
             <div className="flex flex-col justify-center bg-primary/20 p-4 px-8 py-4">
-              <span className="text-start font-medium text-2xl text-primary">
+              <span className="text-start font-bold text-2xl text-primary">
                 Visão
               </span>
-              <p>
+              <p className="font-pt-serif text-lg">
                 “Ser referência em sustentabilidade, educação agroalimentar e
                 desenvolvimento comunitário, inspirando vidas e fortalecendo a
                 conexão com a natureza e utilizando o que Deus nos ofereceu para
@@ -204,10 +184,10 @@ const About = () => {
             </div>
 
             <div className="flex flex-col justify-center  px-8 py-4 space-y-3 bg-secondary/45 border-l-[5px] border-primary rounded-bl-3xl">
-              <span className="text-start font-medium text-2xl text-primary">
+              <span className="text-start font-bold text-2xl text-primary font-lora">
                 Valores
               </span>
-              <div className="flex flex-col space-y-2">
+              <div className="flex flex-col space-y-2 font-pt-serif">
                 <div className="flex flex-row items-center gap-2">
                   <div className="p-2 bg-primary/20 rounded-full">
                     <GiPlantWatering size={20} className="text-primary" />
@@ -271,14 +251,14 @@ const About = () => {
       <section className="w-full min-h-[50vh] my-8 md:my-16 bg-secondary py-8">
         <div className="max-w-7xl mx-auto py-4 flex flex-col  my-8 px-4 space-y-6">
           <div className="text-center">
-            <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">
+            <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4 font-lora">
               O Que Fazemos & Atuação{" "}
             </p>
-            <h2 className="text-2xl md:text-5xl font-semibold">
+            <h2 className="text-2xl md:text-5xl font-semibold font-lora">
               Agricultura, pecuária, processamento
             </h2>
           </div>
-          <div className="text-center text-lg">
+          <div className="text-center text-lg font-pt-serif">
             <p>
               Na WutomiDC, cada ação é uma semente plantada para gerar vida.
               Atuamos com compromisso, sustentabilidade e propósito, promovendo
@@ -288,7 +268,7 @@ const About = () => {
         </div>
       </section>
       {/*Fifth Section*/}
-      <section className="relative w-full h-[70vh] my-8 md:my-16 overflow-hidden">
+      <section className="relative w-full h-[70vh] my-8 md:my-16 overflow-hidden md:-mt-16">
         {/* Video Background */}
         <iframe
           className="absolute top-1/2 left-1/2 w-[300%] h-[300%] -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0"
@@ -302,24 +282,24 @@ const About = () => {
 
         {/* Text Content */}
         <div className="relative z-20 h-full flex flex-col items-center justify-center text-center px-4 max-w-5xl mx-auto space-y-6">
-          <h2 className="text-3xl md:text-6xl font-bold text-secondary leading-tight">
+          <h2 className="text-3xl md:text-6xl font-bold text-secondary leading-tight font-lora">
             Cultivando um futuro mais verde e sustentável
           </h2>
-          <p className="text-white/90 text-lg md:text-2xl max-w-3xl">
+          <p className="text-white/90 text-lg md:text-2xl max-w-3xl font-pt-serif">
             Através da inovação e do respeito pela terra, trabalhamos dia após
             dia para garantir alimentos saudáveis e acessíveis para todos.
           </p>
           <Button
             variant="default"
             size="lg"
-            className="mt-8  text-white border-white hover:bg-white hover:text-primary transition-colors duration-300"
+            className="mt-8  text-white border-white hover:bg-white hover:text-primary transition-colors duration-300 font-quincy text-lg"
           >
             Junte-se a Nós
           </Button>
         </div>
       </section>
       {/*Sixth Section*/}
-      <section className="bg-primary py-8 md:py-16">
+      <section className="bg-primary py-8 md:py-16 md:-mt-16">
         {/*First Column*/}
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8">
           <div className="w-full md:w-1/2">
@@ -330,10 +310,10 @@ const About = () => {
             />
           </div>
           <div className="w-full md:w-1/2 flex flex-col space-y-4">
-            <p className="font-bold text-secondary text-2xl md:text-4xl">
+            <p className="font-bold text-secondary text-2xl md:text-4xl font-lora">
               Agricultura
             </p>
-            <p className="text-gray-200 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-200 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               Acreditamos que a natureza é completa e generosa. A terra nos
               oferece alimentos, plantas e recursos capazes de sustentar uma
               vida saudável.
@@ -356,20 +336,20 @@ const About = () => {
         {/*First Column*/}
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8">
           <div className="w-full md:w-1/2 flex flex-col space-y-4">
-            <p className="font-bold text-primary text-2xl md:text-4xl">
+            <p className="font-bold text-primary text-2xl md:text-4xl font-lora">
               Nutrição
             </p>
-            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               Antes de cuidarmos do exterior, é essencial cuidarmos do nosso
               interior. A alimentação é o que nos dá força para enfrentar cada
               dia, sustentar o corpo e manter a mente saudável.
             </p>
-            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               Na WutomiDC promovemos uma alimentação equilibrada, natural e
               consciente, valorizando os alimentos como fonte de energia, saúde
               e vida.
             </p>
-            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               Promovemos práticas agrícolas responsáveis, respeitando os ciclos
               naturais e cuidando da terra como fonte de vida.
             </p>
@@ -395,14 +375,14 @@ const About = () => {
             />
           </div>
           <div className="w-full md:w-1/2 flex flex-col space-y-4">
-            <p className="font-bold text-primary text-2xl md:text-4xl">
+            <p className="font-bold text-primary text-2xl md:text-4xl font-lora">
               Cosméticos Naturais
             </p>
-            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               Assim como a natureza nos fornece alimentos que geram vida, esses
               mesmos produtos podem cuidar do cabelo, da pele e do corpo.
             </p>
-            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               Na WutomiDC desenvolvemos cosméticos naturais a partir dos mesmos
               ingredientes usados na alimentação, promovendo cuidado integral,
               saúde e bem-estar, sem agredir o corpo nem a natureza.
@@ -415,24 +395,24 @@ const About = () => {
         {/*First Column*/}
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8">
           <div className="w-full md:w-1/2 flex flex-col space-y-4">
-            <p className="font-bold text-primary text-2xl md:text-4xl">
+            <p className="font-bold text-primary text-2xl md:text-4xl font-lora">
               Processamento e Transformação
             </p>
-            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               Nosso processamento consiste em pegar produtos naturais e
               transformá-los em produtos que possam ser conservados, sempre de
               forma saudável.
             </p>
-            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               Trabalhamos sem aditivos químicos e sem conservantes artificiais,
               priorizando métodos naturais, com o objetivo de:
             </p>
-            <ul className="list-disc list-inside text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <ul className="list-disc list-inside text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               <li>preservar os nutrientes</li>
               <li>reduzir o desperdício de alimentos</li>
               <li>agregar valor aos produtos agrícolas</li>
             </ul>
-            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               Tudo é feito com cuidado, responsabilidade e respeito à vida.
             </p>
           </div>
@@ -457,22 +437,22 @@ const About = () => {
             />
           </div>
           <div className="w-full md:w-1/2 flex flex-col space-y-4">
-            <p className="font-bold text-primary text-2xl md:text-4xl">
+            <p className="font-bold text-primary text-2xl md:text-4xl  font-lora">
               Sementes e Insumos Agrícolas
             </p>
 
-            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               As sementes representam o início de tudo. Trabalhamos com a
               valorização, fornecimento e cuidado de sementes e insumos
               agrícolas, incentivando a produção sustentável e consciente.
               Apoiamos agricultores e produtores com:
-              <ul className="list-disc list-inside text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+              <ul className="list-disc list-inside text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
                 <li>sementes selecionadas</li>
                 <li>fertilizantes naturais</li>
                 <li>extrume e insumos agrícolas</li>
               </ul>
             </p>
-            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               Nosso foco é fortalecer a autonomia produtiva, respeitando a terra
               e garantindo alimentos de qualidade.
             </p>
@@ -484,18 +464,18 @@ const About = () => {
         {/*First Column*/}
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8">
           <div className="w-full md:w-1/2 flex flex-col space-y-4">
-            <p className="font-bold text-primary text-2xl md:text-4xl">
+            <p className="font-bold text-primary text-2xl md:text-4xl font-lora">
               Cursos, Treinamentos e Workshops
             </p>
-            <ul className="list-disc list-inside text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <ul className="list-disc list-inside text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               <li>cursos</li>
               <li>treinamentos</li>
               <li>workshops e formações</li>
             </ul>
-            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               Nas áreas de:
             </p>
-            <ul className="list-disc list-inside text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <ul className="list-disc list-inside text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               <li>nutrição</li>
               <li>agricultura</li>
               <li>empreendedorismo</li>
@@ -522,15 +502,15 @@ const About = () => {
             />
           </div>
           <div className="w-full md:w-1/2 flex flex-col space-y-4">
-            <p className="font-bold text-primary text-2xl md:text-4xl">
+            <p className="font-bold text-primary text-2xl md:text-4xl font-lora">
               Plataformas Digitais e Tecnologia
             </p>
-            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               Desenvolvemos plataformas digitais que conectam o mundo ao projeto
               WutomiDC, criando pontes entre agricultores, especialistas,
               produtores e consumidores.
             </p>
-            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               A nossa visão é revolucionar a forma como a agricultura e a
               natureza se conectam com a tecnologia, facilitando acesso à
               informação, produtos e oportunidades.
@@ -543,20 +523,20 @@ const About = () => {
         {/*First Column*/}
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8">
           <div className="w-full md:w-1/2 flex flex-col space-y-4">
-            <p className="font-bold text-secondary text-2xl md:text-4xl">
+            <p className="font-bold text-secondary text-2xl md:text-4xl font-lora">
               Impacto Social e Comunitário{" "}
             </p>
-            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               A WutomiDC existe para servir pessoas. Desenvolvemos projetos
               sociais e comunitários focados em:
             </p>
-            <ul className="list-disc list-inside text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <ul className="list-disc list-inside text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               <li>nutrição</li>
               <li>educação</li>
               <li>desenvolvimento infantil</li>
               <li>fortalecimento de comunidades</li>
             </ul>
-            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed">
+            <p className="text-gray-800 text-base md:text-lg text-justify leading-relaxed font-pt-serif">
               Acreditamos que quando cuidamos das pessoas, cuidamos do futuro.
             </p>
           </div>

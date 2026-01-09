@@ -19,8 +19,8 @@ const Services = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <span className="text-primary text-xl">Nossos Serviços</span>
-            <h2 className="text-3xl md:text-5xl font-bold">O Que Fazemos</h2>
+            <span className="text-primary text-lg font-medium tracking-[0.2em] uppercase font-lora">Nossos Serviços</span>
+            <h2 className="text-3xl md:text-5xl font-bold font-lora">O Que Fazemos</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
             {/* First Card*/}
@@ -40,10 +40,10 @@ const Services = () => {
                 />
               </div>
               <div className="flex flex-col justify-center p-6 w-full md:w-3/5 space-y-3 relative bg-primary">
-                <h3 className="text-2xl text-white font-bold  group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-2xl text-white font-bold  group-hover:text-secondary transition-colors duration-300 font-lora">
                   Agricultura
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-400 text-lg leading-relaxed font-pt-serif">
                   Cultivamos produtos vegetais com práticas sustentáveis,
                   garantindo qualidade e respeito à natureza.
                 </p>
@@ -66,10 +66,10 @@ const Services = () => {
                 />
               </div>
               <div className="flex flex-col justify-center p-6 w-full md:w-3/5 space-y-3 relative">
-                <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-2xl font-bold text-white group-hover:text-secondary transition-colors duration-300 font-lora">
                   Pecuária
                 </h3>
-                <p className="text-white text-sm leading-relaxed">
+                <p className="text-white text-lg leading-relaxed font-pt-serif">
                   Criamos animais de forma ética e sustentável, oferecendo nutrição adequada e cuidado no manejo.
                 </p>
               </div>
@@ -91,10 +91,10 @@ const Services = () => {
                 />
               </div>
               <div className="flex flex-col justify-center p-6 w-full md:w-3/5 space-y-3 relative">
-                <h3 className="text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-2xl font-bold text-gray-900 group-hover:text-secondary transition-colors duration-300 font-lora">
                   Nutrição{" "}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-lg leading-relaxed font-pt-serif">
                   Promovemos uma alimentação saudável, nutritiva e segura para
                   pessoas e comunidades.
                 </p>
@@ -117,10 +117,10 @@ const Services = () => {
                 />
               </div>
               <div className="flex flex-col justify-center p-6 w-full md:w-3/5 space-y-3 relative">
-                <h3 className="text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-2xl font-bold text-gray-900 group-hover:text-secondary transition-colors duration-300 font-lora">
                   Processamento e Transformação{" "}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-lg leading-relaxed font-pt-serif">
                   Transformamos produtos agrícolas em alimentos, cosméticos e
                   outros produtos, mantendo qualidade e segurança.
                 </p>
@@ -144,10 +144,10 @@ const Services = () => {
                 />
               </div>
               <div className="flex flex-col justify-center p-6 w-full md:w-3/5 space-y-3 relative bg-primary">
-                <h3 className="text-2xl text-white font-bold  group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-2xl text-white font-bold  group-hover:text-secondary transition-colors duration-300 font-lora">
                   Cosméticos Naturais 
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-400 text-lg leading-relaxed font-pt-serif">
                  Produzimos cosméticos naturais, valorizando ingredientes da terra e práticas sustentáveis.
                 </p>
               </div>
@@ -169,10 +169,10 @@ const Services = () => {
                 />
               </div>
               <div className="flex flex-col justify-center p-6 w-full md:w-3/5 space-y-3 relative">
-                <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-2xl font-bold text-white group-hover:text-secondary transition-colors duration-300 font-lora">
                   Importação e exportação
                 </h3>
-                <p className="text-white text-sm leading-relaxed">
+                <p className="text-white text-lg leading-relaxed font-pt-serif">
                   Importação e exportação-Levamos produtos da terra além-fronteiras, promovendo o comércio sustentável e o desenvolvimento comunitário.
                 </p>
               </div>

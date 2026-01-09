@@ -31,7 +31,7 @@ const ProjectosImpact = () => {
         <div className="max-w-7xl mx-auto md:py-18 py-4 flex flex-col md:flex-row gap-4 my-8 px-4">
           <div className="md:w-1/2">
             <div className="space-y-4 text-lg">
-              <p className="text-2xl md:text-4xl font-semibold">
+              <p className="text-2xl md:text-4xl font-semibold font-lora">
                 Na WutomiDC, acreditamos que impacto verdadeiro começa com
                 intenção, planeamento e compromisso.
               </p>

@@ -61,9 +61,9 @@ const Navbar = () => {
   return (
     <>
       {/* --- Top Info Bar --- */}
-      <section className="hidden md:block w-full py-1 bg-secondary">
+      <section className="hidden md:block w-full py-1 bg-secondary font-lora font-bold">
         <div className="max-w-7xl mx-auto flex flex-row justify-around items-center">
-          <span className="font-medium text-gray-600">
+          <span className="text-gray-600">
             Bem-vindo a WutomiDC
           </span>
 
@@ -84,7 +84,7 @@ const Navbar = () => {
 
           <div className="flex flex-row gap-1 items-center">
             <MdEmail size={20} className="text-gray-600" />
-            <span className="font-medium text-gray-600">
+            <span className="text-gray-600">
               geral@wutomidc.com
             </span>
           </div>
@@ -92,7 +92,7 @@ const Navbar = () => {
       </section>
 
       {/* --- Main Navigation Bar --- */}
-      <nav className="relative z-50 w-full bg-white shadow-md font-montserrat">
+      <nav className="relative z-50 w-full bg-white shadow-md ">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
           {/* Logo */}
           <div className="flex items-center gap-2">
@@ -112,16 +112,16 @@ const Navbar = () => {
           </button>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex flex-row gap-8 items-center relative">
+          <div className="hidden md:flex flex-row gap-8 items-center relative font-bold">
             {navLinks.map((link, index) =>
               link.dropdown ? (
                 <div
                   key={index}
-                  className="relative"
+                  className="relative font-bold"
                   onMouseEnter={() => setOpenDropdown(link.name)}
                   onMouseLeave={() => setOpenDropdown(null)}
                 >
-                  <button className="text-primary hover:text-secondary hover:border-b-2 hover:border-amber-400 font-medium flex items-center gap-1 duration-300">
+                  <button className=" text-[18px] text-primary hover:text-secondary hover:border-b-2 hover:border-amber-400 font-bold  flex items-center gap-1 duration-300">
                     {link.name}
                   </button>
 
@@ -151,7 +151,7 @@ const Navbar = () => {
                 <Link
                   key={index}
                   to={link.path}
-                  className="text-primary hover:text-secondary font-medium duration-300"
+                  className="text-[18px] text-primary hover:text-secondary font-bold duration-300"
                 >
                   {link.name}
                 </Link>
@@ -159,7 +159,7 @@ const Navbar = () => {
             )}
           </div>
           <div>
-            <Link to="/login" className="bg-primary text-secondary px-4 py-2 rounded-md hover:text-white hover:bg-secondary duration-300">
+            <Link to="/login" className="bg-primary font-quincy text-secondary px-4 py-2 rounded-md hover:text-white hover:bg-secondary duration-300">
               Login
             </Link>           
           </div>

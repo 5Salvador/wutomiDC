@@ -26,7 +26,7 @@ const Hero = () => {
             variants={staggerContainer}
             initial="hidden"
             animate="visible"
-            className='absolute top-1/2 left-1/2 md:left-1/5 transform -translate-x-1/2 -translate-y-1/2  flex flex-col shadow-lg'
+            className='absolute top-1/2 left-1/2 md:left-1/3 transform -translate-x-1/2 -translate-y-1/2  flex flex-col shadow-lg'
         >
             <motion.span variants={fadeInUp} className='text-2xl md:text-6xl font-bold  text-primary'>Wutomi<span className='text-secondary'>DC</span></motion.span>
             <motion.p variants={fadeInUp} className="text-2xl md:text-5xl font-bold text-center  text-white italic">Onde a natureza gera Vida</motion.p>

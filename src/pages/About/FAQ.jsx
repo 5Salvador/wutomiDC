@@ -129,17 +129,17 @@ const FAQ = () => {
       <section className="w-full py-8 px-8 flex items-center justify-center my-8">
         <div className="w-[900px] flex flex-col bg-primary rounded-lg shadow-lg p-8 md:p-12 md:mx-4 items-center space-y-8">
           <div className="flex flex-col space-y-4 text-center">
-            <span className="text-xl text-secondary/80">Faca uma pergunta</span>
-            <h1 className="text-white text-3xl md:text-5xl font-semibold">
+            <span className="text-xl text-secondary/80 font-lora">Faca uma pergunta</span>
+            <h1 className="text-white text-3xl md:text-5xl font-semibold font-lora">
               Ainda tem mais perguntas?
             </h1>
-            <span className="text-gray-200">
+            <span className="text-gray-200 font-pt-serif">
              Estamos disponíveis para esclarecer qualquer questão sobre os nossos serviços, produtos, projetos e formas de parceria. Entre em contacto connosco e teremos todo o gosto em ajudar.
             </span>
           </div>
 
           <div className="">
-            <Button variant="ghost" size="lg">
+            <Button variant="ghost" size="lg" className="font-quincy">
               <Link to="/contact">Contacte-nos</Link>
             </Button>
           </div>
@@ -161,7 +161,7 @@ const FaqItemCard = ({ item, isOpen, onToggle, delay }) => {
           className="w-full flex items-center justify-between gap-4 p-5 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-lg"
           aria-expanded={isOpen}
         >
-          <span className="font-heading text-lg font-medium text-primary leading-snug pr-4">
+          <span className="font-heading text-lg font-semibold text-primary leading-snug pr-4 font-lora">
             {item.question}
           </span>
           <span className="faq-icon shrink-0">
@@ -183,7 +183,7 @@ const FaqItemCard = ({ item, isOpen, onToggle, delay }) => {
           }`}
         >
           <div className="px-5 pb-5 pt-2">
-            <p className="text-primary/80 leading-relaxed text-[15px]">
+            <p className="text-primary/80 leading-relaxed text-[15px] font-pt-serif">
               {item.answer}
             </p>
           </div>

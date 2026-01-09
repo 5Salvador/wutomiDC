@@ -31,7 +31,7 @@ const ProjectosImpact = () => {
         <div className="max-w-7xl mx-auto md:py-18 py-4 flex flex-col md:flex-row gap-4 my-8 px-4">
           <div className="md:w-1/2">
             <div className="space-y-4 text-lg">
-              <p className="text-2xl md:text-4xl font-semibold font-lora">
+              <p className="text-2xl md:text-4xl font-semibold font-send-flowers">
                 Na WutomiDC, acreditamos que impacto verdadeiro começa com
                 intenção, planeamento e compromisso.
               </p>
@@ -52,7 +52,7 @@ const ProjectosImpact = () => {
               />
             </div>
             <div className="md:mt-20">
-              <p className="text-gray-600 text-lg">
+              <p className="text-gray-600 text-lg font-pt-serif">
                 As áreas abaixo representam onde desejamos atuar e investir
                 esforços para gerar transformação sustentável, promovendo vida,
                 saúde e bem-estar para pessoas e comunidades.
@@ -66,25 +66,25 @@ const ProjectosImpact = () => {
       <section className="w-full min-h-[50vh] my-8 md:my-16 -mt-10 md:-mt-1 bg-secondary py-8">
         <div className="max-w-7xl mx-auto py-4 flex flex-col  my-8 px-4 space-y-6">
           <div className="text-center">
-            <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">
+            <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4 font-lora">
               Projectos e impacto social{" "}
             </p>
           </div>
           <div className="text-justify flex flex-col md:flex-row gap-4 text-lg justify-center">
-            <p className="p-8 bg-primary w-96 text-white rounded-2xl hover:bg-tertiary/80 duration-300">
+            <p className="p-8 bg-primary w-96 text-white rounded-2xl hover:bg-tertiary/80 duration-300 font-pt-serif">
               Na WutomiDC, acreditamos que a terra, a alimentação e o cuidado
               com a vida estão profundamente ligados. O nosso compromisso vai
               além da produção e comercialização de produtos — buscamos
               transformar mentalidades, fortalecer comunidades e promover uma
               relação saudável entre o ser humano e a natureza.
             </p>
-            <p className="p-8 bg-primary w-96 text-white rounded-2xl hover:bg-tertiary/80 duration-300">
+            <p className="p-8 bg-primary w-96 text-white rounded-2xl hover:bg-tertiary/80 duration-300 font-pt-serif">
               Os nossos projectos e iniciativas são pensados para gerar impacto
               social, ambiental, económico e espiritual, respeitando os ciclos
               naturais da vida e valorizando aquilo que Deus já colocou à nossa
               disposição.
             </p>
-            <p className="p-8 bg-primary w-96 text-white rounded-2xl hover:bg-tertiary/80 duration-300">
+            <p className="p-8 bg-primary w-96 text-white rounded-2xl hover:bg-tertiary/80 duration-300 font-pt-serif">
               Mesmo que muitos dos projectos estejam em fase de planeamento e
               estruturação, eles nascem de uma visão sólida, com objectivos
               claros e um forte compromisso com o futuro.
@@ -95,7 +95,7 @@ const ProjectosImpact = () => {
       {/*Third Section */}
       <section className="w-full min-h-screen my-8 md:my-16 -mt-10 md:-mt-16 bg-secondary py-8">
         <div className="text-center">
-          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">
+          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4 font-lora">
             Agricultura Sustentável e Orgânica
           </p>
         </div>
@@ -109,25 +109,25 @@ const ProjectosImpact = () => {
 
         {/*Texto */}
         <div className="max-w-4xl mx-auto mt-6 p-2">
-          <p className="text-center text-justify text-lg text-gray-600">
+          <p className="text-center text-justify text-lg text-gray-600 font-pt-serif">
             A agricultura é a base da vida. Acreditamos que a natureza já nos
             oferece tudo o que precisamos para viver de forma saudável e
             equilibrada. O grande desafio do nosso tempo não é a falta de
             recursos, mas sim a forma como os utilizamos.
           </p>
 
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-600 font-pt-serif">
             Na WutomiDC, promovemos uma agricultura que:
           </p>
 
-          <ul className="text-lg list-disc ml-5 mt-4 text-gray-600">
+          <ul className="text-lg list-disc ml-5 mt-4 text-gray-600 font-pt-serif">
             <li>Respeita o solo, a água e os ecossistemas</li>
             <li>Valoriza práticas naturais e sustentáveis </li>
             <li>Reduz a dependência de produtos químicos agressivos</li>
             <li>Preserva a fertilidade da terra para as próximas gerações</li>
           </ul>
 
-          <p className="text-lg text-gray-600 mt-4">
+          <p className="text-lg text-gray-600 mt-4 font-pt-serif">
             Encorajamos os agricultores a enxergarem a terra como um bem
             precioso, que precisa ser cuidado e não explorado de forma
             excessiva. A agricultura orgânica não é apenas um método de produção
@@ -137,7 +137,7 @@ const ProjectosImpact = () => {
         </div>
 
         <div className="text-center mt-16">
-          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">
+          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4 font-lora">
             Agricultura Sustentável e Orgânica
           </p>
         </div>
@@ -151,15 +151,15 @@ const ProjectosImpact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto mt-8">
-          <p className="text-center text-justify text-lg text-gray-600">
+          <p className="text-center text-justify text-lg text-gray-600 font-pt-serif">
             Cuidar do meio ambiente é um acto de responsabilidade e amor pela
             vida. A WutomiDC entende que não existe desenvolvimento verdadeiro
             se ele não for sustentável.
           </p>
-          <p className="text-center text-justify text-lg text-gray-600">
+          <p className="text-center text-justify text-lg text-gray-600 font-pt-serif">
             As nossas iniciativas ambientais focam-se em:
           </p>
-          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600">
+          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600 font-pt-serif">
             <li>
               Plantio de árvores como forma de regenerar o solo e melhorar a
               qualidade do ar
@@ -174,7 +174,7 @@ const ProjectosImpact = () => {
             </li>
           </ul>
 
-          <p className="text-center text-justify text-lg text-gray-600 mt-4">
+          <p className="text-center text-justify text-lg text-gray-600 mt-4 font-pt-serif">
             A sustentabilidade é um compromisso contínuo. Queremos contribuir
             para um futuro onde o desenvolvimento económico caminhe lado a lado
             com a preservação da natureza.
@@ -185,7 +185,7 @@ const ProjectosImpact = () => {
           {/*Nutricao e Saude*/}
           <div className="md:w-1/2 p-2">
             <div className="text-center mt-16">
-              <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">
+              <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4 font-lora">
                 Nutrição e Saúde
               </p>
             </div>
@@ -199,22 +199,22 @@ const ProjectosImpact = () => {
             </div>
 
             <div className="max-w-4xl mx-auto mt-8">
-              <p className="text-center text-justify text-lg text-gray-600">
+              <p className="text-center text-justify text-lg text-gray-600 font-pt-serif">
                 Antes de cuidarmos do exterior, precisamos cuidar do nosso
                 interior. A alimentação é o combustível que nos permite viver,
                 trabalhar, crescer e servir.
               </p>
-              <p className="text-center text-justify text-lg text-gray-600">
+              <p className="text-center text-justify text-lg text-gray-600 font-pt-serif">
                 Na WutomiDC, acreditamos que uma alimentação saudável:
               </p>
-              <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600">
+              <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600 font-pt-serif">
                 <li>Fortalece o corpo</li>
                 <li>Previne doenças</li>
                 <li>Melhora a qualidade de vida</li>
                 <li>Impacta directamente o bem-estar físico e emocional</li>
               </ul>
 
-              <p className="text-center text-justify text-lg text-gray-600 mt-4">
+              <p className="text-center text-justify text-lg text-gray-600 mt-4 font-pt-serif">
                 Promovemos a educação nutricional como ferramenta de
                 transformação social, ajudando famílias e comunidades a fazerem
                 escolhas alimentares mais conscientes, acessíveis e
@@ -226,7 +226,7 @@ const ProjectosImpact = () => {
           {/* Nutrição Infantil */}
           <div className="md:w-1/2 p-2">
             <div className="text-center mt-16">
-              <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">
+              <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4 font-lora">
                 Nutrição Infantil
               </p>
             </div>
@@ -240,23 +240,23 @@ const ProjectosImpact = () => {
             </div>
 
             <div className="max-w-4xl mx-auto mt-8">
-              <p className="text-center text-justify text-lg text-gray-600">
+              <p className="text-center text-justify text-lg text-gray-600 font-pt-serif">
                 A infância é a fase mais importante da formação humana. Os
                 hábitos alimentares desenvolvidos nessa etapa influenciam toda a
                 vida adulta.
               </p>
-              <p className="text-center text-justify text-lg text-gray-600">
+              <p className="text-center text-justify text-lg text-gray-600 font-pt-serif">
                 Por isso, damos especial atenção à nutrição infantil,
                 promovendo:
               </p>
-              <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600">
+              <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600 font-pt-serif">
                 <li>Alimentação saudável desde os primeiros anos</li>
                 <li>Uso de alimentos naturais e nutritivos</li>
                 <li>Conscientização dos pais e cuidadores</li>
                 <li>Combate à desnutrição e má alimentação</li>
               </ul>
 
-              <p className="text-center text-justify text-lg text-gray-600 mt-4">
+              <p className="text-center text-justify text-lg text-gray-600 mt-4 font-pt-serif">
                 Crianças bem alimentadas crescem mais fortes, saudáveis e com
                 maior capacidade de aprendizagem e desenvolvimento.
               </p>
@@ -266,7 +266,7 @@ const ProjectosImpact = () => {
 
         {/*Processamento & Transformacao de Alimentos Section */}
         <div className="text-center mt-16">
-          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">
+          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4 font-lora">
             Processamento & Transformação de Alimentos
           </p>
         </div>
@@ -280,15 +280,15 @@ const ProjectosImpact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto mt-8 p-4">
-          <p className="text-center text-justify text-lg text-gray-600">
+          <p className="text-center text-justify text-lg text-gray-600 font-pt-serif">
             Uma grande parte dos alimentos produzidos no mundo é desperdiçada.
             Na WutomiDC, vemos o processamento como uma solução consciente para
             esse problema.
           </p>
-          <p className="text-center text-justify text-lg text-gray-600">
+          <p className="text-center text-justify text-lg text-gray-600 font-pt-serif">
             O nosso processamento consiste em:
           </p>
-          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600">
+          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600 font-pt-serif">
             <li>
               Transformar produtos naturais em alimentos que possam ser
               conservados por mais tempo
@@ -301,7 +301,7 @@ const ProjectosImpact = () => {
             <li>Preservar o máximo de valor nutricional dos alimentos</li>
           </ul>
 
-          <p className="text-center text-justify text-lg text-gray-600 mt-4">
+          <p className="text-center text-justify text-lg text-gray-600 mt-4 font-pt-serif">
             Este processo permite não só reduzir o desperdício, mas também
             agregar valor à produção agrícola local e garantir alimentos mais
             saudáveis para os consumidores.
@@ -312,7 +312,7 @@ const ProjectosImpact = () => {
       <section className="w-full min-h-screen p-4">
         {/* Sementes: O Princípio da Vida Section */}
         <div className="text-center mt-16">
-          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">
+          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4 font-lora">
             Sementes: O Princípio da Vida
           </p>
         </div>
@@ -326,14 +326,14 @@ const ProjectosImpact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto mt-8 p-2">
-          <p className="text-center text-justify text-lg text-gray-600">
+          <p className="text-center text-justify text-lg text-gray-600 font-pt-serif">
             Tudo começa com uma semente. As sementes representam esperança,
             continuidade e futuro.
           </p>
-          <p className="text-center text-justify text-lg text-gray-600">
+          <p className="text-center text-justify text-lg text-gray-600 font-pt-serif">
             Trabalhamos para:
           </p>
-          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600">
+          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600 font-pt-serif">
             <li>Preservar sementes de qualidade</li>
             <li>Promover o uso consciente e responsável</li>
             <li>
@@ -343,7 +343,7 @@ const ProjectosImpact = () => {
             <li>Incentivar a autonomia alimentar e produtiva</li>
           </ul>
 
-          <p className="text-center text-justify text-lg text-gray-600 mt-4">
+          <p className="text-center text-justify text-lg text-gray-600 mt-4 font-pt-serif">
             Cuidar das sementes é cuidar da vida, da terra e das próximas
             gerações.
           </p>
@@ -353,7 +353,7 @@ const ProjectosImpact = () => {
       <section className="w-full min-h-screen p-4">
         {/* Trabalho Comunitário & Agricultura como Fonte de Renda Section */}
         <div className="text-center mt-16">
-          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">
+          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4 font-lora">
             Trabalho Comunitário & Agricultura como Fonte de Renda
           </p>
         </div>
@@ -367,20 +367,20 @@ const ProjectosImpact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto mt-8 p-2">
-          <p className="text-center text-justify text-lg text-gray-600">
+          <p className="text-center text-justify text-lg text-gray-600 font-pt-serif">
             Na WutomiDC acreditamos que a agricultura é mais do que produção de
             alimentos — é uma poderosa fonte de renda, dignidade e autonomia
             para famílias e comunidades.
           </p>
-          <p className="text-center text-justify text-lg text-gray-600 my-2">
+          <p className="text-center text-justify text-lg text-gray-600 my-2 font-pt-serif">
             Por isso, desejamos desenvolver ações comunitárias que promovam a
             agricultura como meio de subsistência e geração de rendimento,
             especialmente para pessoas em situação de vulnerabilidade.
           </p>
-          <p className="text-center text-justify text-lg text-gray-600">
+          <p className="text-center text-justify text-lg text-gray-600 my-2 font-pt-serif">
             Essas iniciativas incluem:
           </p>
-          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600">
+          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600 font-pt-serif">
             <li>
               Distribuição de sementes e insumos básicos a famílias e pequenos
               produtores mais necessitados
@@ -402,7 +402,7 @@ const ProjectosImpact = () => {
             </li>
           </ul>
 
-          <p className="text-center text-justify text-lg text-gray-600 mt-4">
+          <p className="text-center text-justify text-lg text-gray-600 mt-4 font-pt-serif">
             Acreditamos que, quando uma comunidade tem acesso à terra, sementes
             e conhecimento, ela ganha a capacidade de produzir, vender,
             alimentar-se melhor e construir o próprio futuro.
@@ -410,33 +410,33 @@ const ProjectosImpact = () => {
         </div>
         {/*Second Text */}
         <div className="max-w-4xl mx-auto mt-8 p-2">
-          <p className="text-center text-justify text-lg text-gray-600">
+          <p className="text-center text-justify text-lg text-gray-600 font-pt-serif">
             O nosso foco não é apenas ajudar no curto prazo, mas criar soluções
             duradouras, onde a agricultura se torna:
           </p>
 
-          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600">
+          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600 font-pt-serif">
             <li>uma fonte estável de renda</li>
             <li>um meio de segurança alimentar</li>
             <li>uma ferramenta de transformação social</li>
           </ul>
 
-          <p className="text-center text-justify text-lg text-gray-600 mt-4">
+          <p className="text-center text-justify text-lg text-gray-600 mt-4 font-pt-serif">
             A WutomiDC acredita que o verdadeiro impacto social acontece quando
             as pessoas ganham ferramentas para caminhar com autonomia.
           </p>
-          <p className="text-center text-justify text-lg text-gray-600 my-2">
+          <p className="text-center text-justify text-lg text-gray-600 my-2 font-pt-serif">
             Por isso, os nossos projectos comunitários têm como foco:
           </p>
 
-          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600">
+          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600 font-pt-serif">
             <li>Promover a agricultura como fonte de renda sustentável</li>
             <li>Apoiar famílias em situação de vulnerabilidade</li>
             <li>Fornecer sementes, insumos e orientação técnica</li>
             <li>Incentivar hortas familiares e comunitárias</li>
           </ul>
 
-          <p className="text-center text-justify text-lg text-gray-600 mt-4">
+          <p className="text-center text-justify text-lg text-gray-600 mt-4 font-pt-serif">
             A agricultura, quando bem orientada, pode transformar realidades,
             gerar renda, fortalecer a segurança alimentar e devolver dignidade
             às comunidades.
@@ -447,7 +447,7 @@ const ProjectosImpact = () => {
       <section className="w-full min-h-screen p-4">
         {/* Formação, Cursos & Capacitação Section */}
         <div className="text-center mt-16">
-          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">
+          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4 font-lora">
             Formação, Cursos & Capacitação
           </p>
         </div>
@@ -461,24 +461,24 @@ const ProjectosImpact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto mt-8 p-2">
-          <p className="text-center text-justify text-lg text-gray-600">
+          <p className="text-center text-justify text-lg text-gray-600 font-pt-serif">
             Vivemos num tempo em que o conhecimento é essencial para a
             sobrevivência e o progresso. A WutomiDC irá investir fortemente na
             formação e capacitação de pessoas.
           </p>
 
-          <p className="text-center text-justify text-lg text-gray-600 mt-2">
+          <p className="text-center text-justify text-lg text-gray-600 mt-2 font-pt-serif">
             Planeamos oferecer:
           </p>
-          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600">
+          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600 font-pt-serif">
             <li>Cursos práticos e teóricos</li>
             <li>Treinamentos técnicos</li>
             <li>Workshops e encontros formativos</li>
           </ul>
-          <p className="text-center text-justify text-lg text-gray-600 mt-2">
+          <p className="text-center text-justify text-lg text-gray-600 mt-2 font-pt-serif">
             Nas áreas de:
           </p>
-          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600">
+          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600 font-pt-serif">
             <li>Agricultura</li>
             <li>Nutrição</li>
             <li>Processamento de alimentos</li>
@@ -487,7 +487,7 @@ const ProjectosImpact = () => {
             <li>Sustentabilidade</li>
           </ul>
 
-          <p className="text-center text-justify text-lg text-gray-600 mt-4">
+          <p className="text-center text-justify text-lg text-gray-600 mt-4 font-pt-serif">
             Essas formações serão conduzidas por profissionais especializados e
             adaptadas à realidade local.
           </p>
@@ -497,7 +497,7 @@ const ProjectosImpact = () => {
       <section className="w-full min-h-screen p-4">
         {/* Plataformas Digitais & Inovação Section */}
         <div className="text-center mt-16">
-          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">
+          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4 font-lora">
             Plataformas Digitais & Inovação
           </p>
         </div>
@@ -511,17 +511,17 @@ const ProjectosImpact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto mt-8 p-2">
-          <p className="text-center text-justify text-lg text-gray-600 mt-2">
+          <p className="text-center text-justify text-lg text-gray-600 mt-2 font-pt-serif">
             A tecnologia será uma grande aliada da WutomiDC. Através de
             plataformas digitais, queremos:
           </p>
-          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600">
+          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600 font-pt-serif">
             <li>Conectar agricultores, parceiros e comunidades</li>
             <li>Partilhar conhecimento</li>
             <li>Expandir o alcance dos nossos projectos</li>
             <li>Criar redes de impacto e colaboração</li>
           </ul>
-          <p className="text-center text-justify text-lg text-gray-600 mt-2">
+          <p className="text-center text-justify text-lg text-gray-600 mt-2 font-pt-serif">
             A inovação será usada como ferramenta para aproximar pessoas e
             soluções.
           </p>
@@ -532,7 +532,7 @@ const ProjectosImpact = () => {
       <section className="w-full min-h-screen p-4">
         {/* Plataformas Digitais & Inovação Section */}
         <div className="text-center mt-16">
-          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4">
+          <p className="text-primary font-medium tracking-[0.2em] uppercase text-lg mb-4 font-lora">
             Plataformas Digitais & Inovação
           </p>
         </div>
@@ -546,18 +546,18 @@ const ProjectosImpact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto mt-8 p-2">
-          <p className="text-center text-justify text-lg text-gray-600 mt-2">
+          <p className="text-center text-justify text-lg text-gray-600 mt-2 font-pt-serif">
             Nenhum grande impacto é feito sozinho. A WutomiDC está aberta a
             parcerias com:
           </p>
-          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600">
+          <ul className="text-center text-justify text-lg list-disc ml-5 mt-4 text-gray-600 font-pt-serif">
             <li>Empresas</li>
             <li>Organizações</li>
             <li>Instituições</li>
             <li>Igrejas</li>
             <li>Pessoas que partilhem da mesma visão</li>
           </ul>
-          <p className="text-center text-justify text-lg text-gray-600 mt-2">
+          <p className="text-center text-justify text-lg text-gray-600 mt-2 font-pt-serif">
             Os parceiros poderão apoiar projectos específicos, contribuindo
             directamente para o desenvolvimento social, ambiental e comunitário.
           </p>
@@ -567,9 +567,9 @@ const ProjectosImpact = () => {
       <section className="w-full min-h-[20vh] p-2">
         <div className="max-w-7xl mx-auto flex flex-col space-y-6 items-center justify-center">
           <div className="w-auto">
-            <Button variant="default" size="lg">Fale Conosco</Button>
+            <Button variant="default" size="lg" className="font-quincy text-lg">Fale Conosco</Button>
           </div>
-          <p className="text-center text-justify text-lg text-gray-600 mt-2">
+          <p className="text-center text-justify text-lg text-gray-600 mt-2 font-pt-serif">
             ✨ A WutomiDC existe para cultivar vida, princípios e esperança — da terra ao coração das pessoa
           </p>
         </div>

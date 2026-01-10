@@ -1,5 +1,6 @@
 import React from 'react'
 import ProductCard from './ui/ProductCard'
+import BusinessHighlights from './BusinessHighlights'
 
 
 const products = [
@@ -40,6 +41,9 @@ const Catalogo = () => {
                 <ProductCard key={index} {...product} />
             ))}
             </div>
+
+            {/* Information */}
+           <BusinessHighlights />
             
         </div>
 

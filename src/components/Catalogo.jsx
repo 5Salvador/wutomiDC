@@ -4,20 +4,20 @@ import ProductCard from './ui/ProductCard'
 
 const products = [
     {
-        name: 'Product 1',
-        price: 10,
+        name: 'Tomate Fresco',
+        price: 100,
         image: 'https://images.unsplash.com/photo-1662370761575-05ff1ee40d7d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dmVnZXRhYmxlc3xlbnwwfHwwfHx8MA%3D%3D',
         alt: 'Product 1'
     },
     {
-        name: 'Product 2',
-        price: 20,
+        name: 'Carne Fresca',
+        price: 300,
         image: 'https://images.unsplash.com/photo-1602470520998-f4a52199a3d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lYXR8ZW58MHx8MHx8fDA%3D',
         alt: 'Product 2'
     },
     {
-        name: 'Product 3',
-        price: 30,
+        name: 'Carne Fresca',
+        price: 300,
         image: 'http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcRPZXoKVF3VMN8gkuiAcYhpnLzU-t0X6vsXFIcAwRJBBHr9uPG7kVzKYUdYfq5n6uTjs02Hf1v890R28_DZPNg',
         alt: 'Product 3'
     }

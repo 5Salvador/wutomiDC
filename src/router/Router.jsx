@@ -6,6 +6,7 @@ import ProjectosImpact from "../pages/About/ProjectosImpact";
 import AgricultoresParceiros from "../pages/About/AgricultoresParceiros";
 import Testemunhos from "../pages/About/Testemunhos"
 import FAQ from "../pages/About/FAQ"
+import Agricultura from "../pages/Services/Agricultura"
 
 const router = createBrowserRouter([
     {
@@ -15,6 +16,8 @@ const router = createBrowserRouter([
                 path:"/",
                 element: <App />
             },
+
+            //About section pages
             {
                 path:"/about",
                 element: <About />
@@ -34,6 +37,11 @@ const router = createBrowserRouter([
             {
                 path: "/faq",
                 element: <FAQ />
+            },
+            //Services section page
+            {
+                path: "/agricultura",
+                element: <Agricultura />
             }
         ]
     }

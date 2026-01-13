@@ -1,6 +1,5 @@
 import React from 'react'
 import ProductCard from './ui/ProductCard'
-import BusinessHighlights from './BusinessHighlights'
 
 
 
@@ -25,30 +24,18 @@ const products = [
     }
 ]
 
-const Catalogo = () => {
+const CatalogoCaixas = () => {
   return (
-    <section className='w-full min-h-screen py-8 px-4 md:py-10 md:px-8 '>
-        <div className='max-w-7xl mx-auto'>
-            <div className='text-center mb-8 space-y-8'>
-                <p className='text-primary text-lg font-medium tracking-[0.2em] uppercase font-lora'>
-                    Nossos servicos
-                </p>
-                <span className='text-2xl md:text-5xl font-medium font-lora'>Venda de vegetais, frutos e muais</span>
-            </div>
-
+   
+ <div className='max-w-7xl mx-auto'>
             {/* Card Component imported of the products */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-20'>
             {products.map((product, index) => (
                 <ProductCard key={index} {...product} />
             ))}
-            </div>
-            <BusinessHighlights />
-            
-            
+            </div>           
         </div>
-
-    </section>
   )
 }
 
-export default Catalogo
+export default CatalogoCaixas

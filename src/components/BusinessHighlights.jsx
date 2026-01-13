@@ -42,12 +42,12 @@ const BusinessHighlights = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 ">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold font-lora text-gray-900 mb-4">
+        <h2 className="text-xl md:text-xl font-medium font-lora">
           Comprometidos com a Qualidade e Sustentabilidade
         </h2>
-        <p className="text-gray-600 max-w-3xl mx-auto mb-12">
+        <p className="text-gray-600 max-w-3xl mx-auto mb-12 font-pt-serif">
           Levamos até você produtos cultivados com cuidado, respeitando o meio ambiente e valorizando produtores locais.
         </p>
 
@@ -58,10 +58,10 @@ const BusinessHighlights = () => {
               className="bg-white rounded-2xl shadow-md hover:shadow-lg p-6 flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-2"
             >
               <div className="mb-4">{item.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2 font-lora">
                 {item.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed font-pt-serif">
                 {item.description}
               </p>
             </div>

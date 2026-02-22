@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Button } from "../../components/ui/button";
 import HeroSection from "../../components/HeroSection";
 import Picture20 from "../../assets/Picture20.jpg";
@@ -16,6 +16,11 @@ import Picture31 from "../../assets/Digital.jpg";
 import Picture32 from "../../assets/Picture32.jpg";
 
 const ProjectosImpact = () => {
+
+  //Scrool the page from top
+      useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
  
   return (
     <>

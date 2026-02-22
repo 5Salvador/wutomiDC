@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Plus, Minus } from "lucide-react";
 import HeroSection from "../../components/HeroSection";
 import { Link } from "react-router-dom";

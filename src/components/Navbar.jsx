@@ -48,7 +48,8 @@ const Navbar = () => {
         { name: "Treinamentos", path: "/treinamentos" },
       ],
     },
-    { name: "Loja", path: "/shop" },
+    // { name: "Loja", path: "/shop" },
+    {name:"Contato", path: "/contact"},
     // {
     //   name: "Login",
     //   dropdown: [
@@ -158,7 +159,7 @@ const Navbar = () => {
               )
             )}
           </div>
-          <div>
+          <div className="hidden md:block">
             <Link to="/login" className="bg-primary font-quincy text-secondary px-4 py-2 rounded-md hover:text-white hover:bg-secondary duration-300">
               Login
             </Link>           

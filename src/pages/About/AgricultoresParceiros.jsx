@@ -1,9 +1,20 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
 
 const AgricultoresParceiros = () => {
+
+
+  //Scrool the page from top
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
-    <section>
-        Em Desenvolvimento
+    <section className='w-full min-h-screen'>
+        <div className='max-w-7xl mx-auto px-4'>
+            <div>
+                Pagina em desenvolvimento....
+            </div>
+
+        </div>
     </section>
   )
 }

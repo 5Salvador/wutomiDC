@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import AboutImage from "../../assets/about.jpg";
 import { Button } from "../../components/ui/button.jsx";
 import { motion } from "framer-motion";
@@ -27,6 +27,10 @@ import Farm3 from "../../assets/natural.png"
 import Digital from "../../assets/Digital.jpg";
 
 const About = () => {
+  
+  useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
  
   return (
     <>

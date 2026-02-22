@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import HeroSection from "../../components/HeroSection";
 import Banner from "../../assets/BannerAgricultura.jpg";
 import { Button } from "../../components/ui/button";
@@ -12,6 +12,13 @@ import Picture35 from "../../assets/Picture35.jpg";
 import { Sprout, Droplet, Recycle, Leaf } from "lucide-react";
 
 const Agricultura = () => {
+
+  
+  useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
+
   const highlights = [
     {
       icon: <Sprout className="w-6 h-6 text-green-700" />,

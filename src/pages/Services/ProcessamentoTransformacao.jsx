@@ -1,6 +1,6 @@
 import React,{ useEffect } from 'react'
 
-const  Testemunhos = () => {
+const Pecuaria = () => {
 
 
   //Scrool the page from top
@@ -19,4 +19,4 @@ const  Testemunhos = () => {
   )
 }
 
-export default Testemunhos;
+export default Pecuaria
